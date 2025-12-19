@@ -3,6 +3,8 @@
 
 #if defined(MILEVERSION_IMPL_WIN32)
 #include "mileversion/mileversionimpl_WIN32.h"
+#elif defined(MILEVERSION_IMPL_ANDROID)
+#include "mileversion/mileversionimpl_ANDROID.h"
 #elif defined(MILEVERSION_IMPL_LINUX)
 #include "mileversion/mileversionimpl_LINUX.h"
 #endif

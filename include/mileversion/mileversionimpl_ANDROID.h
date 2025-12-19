@@ -1,0 +1,24 @@
+#ifndef H__MILEVERSION_MILEVERSIONIMPL_ANDROID__H
+#define H__MILEVERSION_MILEVERSIONIMPL_ANDROID__H
+
+#include <string>
+
+namespace mileversion {
+
+class mileversionimpl
+{
+public:
+	mileversionimpl(const std::string &filename);
+	virtual ~mileversionimpl();
+
+	bool haveInfo();
+	const std::string &fileVersion();
+private:
+	std::string _filename;
+	bool _haveinfo;
+	std::string _fileversion;
+};
+
+};
+
+#endif // H__MILEVERSION_MILEVERSIONIMPL_ANDROID__H

@@ -1,4 +1,7 @@
 /build
 /buildrel
+build-*/
+buildrel-*/
+.vscode/
 *~
 *kdev4*
